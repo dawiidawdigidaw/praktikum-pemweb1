@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form dan Input</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="nik">NIK:</label><br />
+      <input
+        type="text"
+        name="nik"
+        id="nik"
+        size="10"
+        maxlength="10"
+        required
+        placeholder="Ex: 1234567890"
+      /><br />
+      <label for="nama">Nama:</label><br />
+      <input type="text" name="nama" id="nama" /><br />
+      <label for="tanggal-mulai">Tanggal Mulai</label><br />
+      <input
+        type="date"
+        name="tanggal-mulai"
+        id="tanggal-mulai"
+        required
+        min="2022-01-11"
+      /><br />
+      <label for="gaji-pokok">Gaji Pokok</label><br />
+      <input
+        type="number"
+        name="gaji-pokok"
+        id="gaji-pokok"
+        required
+        min="1000000"
+        step="1000"
+      /><br />
+      <label for="status-karyawan">Status Karyawan</label><br />
+      <input type="radio" name="tetap" id="status-karyawan" value="TETAP" />
+      <label for="tetap">TETAP</label><br />
+      <input type="radio" name="kontrak" id="status-karyawan" />
+      <label for="kontrak">KONTRAK</label><br />
+      <input type="radio" name="magang" id="status-karyawan" />
+      <label for="magang">MAGANG</label><br />
+      <input type="submit" name="btn-submit" id="Submit" />
+      <input type="reset" name="btn-reset" id="Reset" />
+    </form>
+  </body>
+</html>
